@@ -510,9 +510,34 @@ function updateQtyDisplays(){
   var fullEl = document.getElementById('hero-full-total');
   if(fullEl) fullEl.textContent = '$' + totalFull.toLocaleString();
 }
-function handleReserve(){
-  // Replace this URL with your Stripe Payment Link.
-  window.open('PAYMENT_LINK_HERE','_blank');
+async function handleReserve(){
+  var btn = document.querySelector('.rb-submit');
+  var originalText = btn.textContent;
+  btn.textContent = 'Redirecting to payment...';
+  btn.disabled = true;
+
+  try {
+    var response = await fetch('/.netlify/functions/create-checkout-session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ quantity: qty })
+    });
+
+    var data = await response.json();
+
+    if (data.url) {
+      window.location.href = data.url;
+    } else {
+      alert('Something went wrong. Please try again or contact us directly.');
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }
+  } catch (err) {
+    console.error('Checkout error:', err);
+    alert('Something went wrong. Please try again or contact us directly.');
+    btn.textContent = originalText;
+    btn.disabled = false;
+  }
 }
 </script>
 </body>
