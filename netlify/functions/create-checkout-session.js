@@ -18,9 +18,9 @@ exports.handler = async function (event) {
   try {
     const { quantity } = JSON.parse(event.body);
 
-    // Validate quantity: must be a whole number between 1 and 10
-    const qty = parseInt(quantity, 10);
-    if (!Number.isInteger(qty) || qty < 1 || qty > 10) {
+    // Validate quantity: must be a whole number between 1 and 100
+    const qty = parseInt(quantity, 100);
+    if (!Number.isInteger(qty) || qty < 1 || qty > 100) {
       return {
         statusCode: 400,
         body: JSON.stringify({ error: 'Invalid quantity. Must be between 1 and 10.' })
