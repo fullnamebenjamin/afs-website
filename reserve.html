@@ -29,7 +29,7 @@ nav{display:flex;align-items:center;padding:20px 40px;background:var(--stone-lig
 .section-warm{background:#f0ece3;padding:80px 50px}
 .section-mid{background:var(--stone-mid);padding:80px 50px}
 .section-mid h2{color:var(--stone-warm)}
-.sl{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:18px}
+.sl{font-size:20px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:18px}
 .sld{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);margin-bottom:18px}
 h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;line-height:1.12;margin-bottom:18px}
 .body-text{font-size:13px;color:#6a6058;line-height:1.8;max-width:560px;margin-bottom:48px}
@@ -43,7 +43,7 @@ h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:300;line-he
 .faq-a-inner{padding:0 0 26px;font-size:13px;color:#6a6058;line-height:1.85;max-width:600px}
 .final-cta{background:var(--stone-dark);padding:100px 50px;text-align:center;display:flex;flex-direction:column;align-items:center}
 .final-cta h2{color:var(--stone-warm);font-size:48px;margin-bottom:20px;line-height:1.1}
-.final-cta .cta-sub{color:var(--text-muted);font-size:13px;line-height:1.75;max-width:400px;margin-bottom:40px}
+.final-cta .cta-sub{color:var(--text-muted);font-size:13px;line-height:1.75;max-width:100%;margin-bottom:40px}
 .final-cta .footer-micro{font-size:10px;color:var(--text-ghost);margin-top:20px;letter-spacing:0.08em}
 footer{background:#111009;padding:30px 50px;display:flex;justify-content:space-between;align-items:center}
 footer .logo{font-family:'Cormorant Garamond',serif;font-size:14px;color:var(--text-muted);letter-spacing:0.08em}
@@ -84,7 +84,7 @@ footer p{font-size:10px;color:var(--text-dim);letter-spacing:0.08em}
 .inc-body{font-size:12px;color:var(--text-muted);line-height:1.7}
 .price-panel{background:var(--stone-dark);padding:64px 50px}
 .price-panel h2{color:var(--stone-warm)}
-.price-table{max-width:560px;margin-top:40px}
+.price-table{max-width:560px;margin-top:40px;margin-left:auto;margin-right:auto;text-align:center}
 .price-row{display:flex;justify-content:space-between;align-items:baseline;padding:20px 0;border-bottom:0.5px solid rgba(240,236,227,0.1)}
 .price-row.total{border-bottom:none;padding-top:28px}
 .price-row-label{font-size:13px;color:var(--text-subtle)}
@@ -316,7 +316,6 @@ footer p{font-size:12px}
 <div class="sticky-bar">
   <div class="sticky-left">
     <a href="index.html" class="sticky-logo">A Felt Sense</a>
-    <span class="sticky-price">Reserve for <strong>$250 / bag</strong> &middot; $2,500 total per bag</span>
   </div>
   <button class="btn-demo" onclick="scrollToReserve()">Reserve Now</button>
 </div>
@@ -324,27 +323,23 @@ footer p{font-size:12px}
 <section class="r-hero">
   <div class="r-hero-bg"></div>
   <div class="r-hero-content">
-    <div class="r-eyebrow">Limited Founding Allocation &middot; Est. Shipping September</div>
-    <h1>Reserve your<br><em>Pillow Bag.</em></h1>
-    <p class="r-hero-sub">The complete in-room ritual kit for business owners bringing A Felt Sense into their property. Audiophile headphones, three eye masks, three pillow cases &#8212; all in our signature pillow bag carry.</p>
+    <h1>Reserve your Pillow Bags.</h1>
+    <p class="r-hero-sub">The complete in-room wellness ritual kit for hotel owners. Audiophile headphones, vibroacoustic pillow and three washable pillow cases, all in our signature Pillow Bag carry.</p>
     <div class="r-price-row">
-      <span class="r-price-deposit">$250</span>
+      <span class="r-price-deposit">$2,500</span>
     </div>
-    <div class="r-price-label">Due today to reserve &middot; per Pillow Bag</div>
-    <button class="btn-demo-large" onclick="scrollToReserve()" style="margin-top:28px">Reserve Your Pillow Bag</button>
-    <p class="r-balance-note" style="margin-top:24px">Total price is <strong>$2,500 per bag</strong>. You pay <strong>$250 now</strong>, and the remaining <strong>$2,250 balance</strong> is invoiced separately before your September shipment.</p>
+    <button class="btn-demo-large" onclick="scrollToReserve()" style="margin-top:28px">RESERVE YOUR PILLOW BAGS</button>
+    <p class="r-balance-note" style="margin-top:24px">Total price is <strong>$2,500 per bag</strong>. Ships in January 2027.</p>
   </div>
 </section>
 
 <div class="quote-band">
   <div class="quote-band-text">One kit. One ritual. Quietly unforgettable.</div>
-  <div class="quote-band-micro">Reserve your place in the founding production run</div>
 </div>
 
 <section class="section-light">
   <div class="sl">What's included</div>
   <h2>Everything needed<br>to begin the ritual.</h2>
-  <p class="body-text">The Pillow Bag is the complete A Felt Sense in-room kit &#8212; designed to outfit a single room or suite with everything required to deliver the full guest or client experience from day one.</p>
   <div class="includes-grid">
     <div class="inc-card">
       <div class="inc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1L6 7z"/><path d="M9 7V5.5a3 3 0 0 1 6 0V7"/><path d="M8 11c0 1.5 1.5 2.5 4 2.5s4-1 4-2.5"/></svg></div>
@@ -357,9 +352,9 @@ footer p{font-size:12px}
       <div class="inc-body">Studio-grade spatial audio built for immersive, distraction-free sessions.</div>
     </div>
     <div class="inc-card">
-      <div class="inc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11c0-1.8 1.4-3 3.3-3 1.6 0 2.7.7 3.4 1.6.4.5.9.8 1.3.8s.9-.3 1.3-.8c.7-.9 1.8-1.6 3.4-1.6 1.9 0 3.3 1.2 3.3 3 0 3.6-3 6-9 6s-9-2.4-9-6z"/><line x1="0.5" y1="9.5" x2="3.2" y2="10.3"/><line x1="23.5" y1="9.5" x2="20.8" y2="10.3"/></svg></div>
-      <div class="inc-title">3 Eye Masks</div>
-      <div class="inc-body">Soft, weighted, and designed for darkness without pressure on the eyes.</div>
+      <div class="inc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="20" height="8" rx="4"/><path d="M6 13h.01M12 13h.01M18 13h.01"/><path d="M2 13h20" stroke-dasharray="2 2"/></svg></div>
+      <div class="inc-title">Vibroacoustic Pillow</div>
+      <div class="inc-body">Our signature transducer-embedded pillow delivers low-frequency vibration directly to the body, deepening relaxation at a physiological level.</div>
     </div>
     <div class="inc-card">
       <div class="inc-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 10h18" opacity="0.5"/><path d="M7 6v4M11 6v4M15 6v4" opacity="0.35"/></svg></div>
@@ -372,27 +367,19 @@ footer p{font-size:12px}
 <section class="price-panel">
   <div class="sld">Reservation terms</div>
   <h2>Pricing.</h2>
-  <p class="body-text" style="color:#B5ADA0;max-width:500px">Outfitting more than one room? Choose your quantity below &#8212; up to 10 Pillow Bags per reservation.</p>
-  <div class="qty-selector">
-    <button class="qty-btn" onclick="changeQty(-1)" type="button">&#8722;</button>
-    <div style="text-align:center">
-      <div class="qty-label">Pillow Bags</div>
-      <div class="qty-display">1</div>
+  <p class="body-text" style="color:#B5ADA0;max-width:500px">Outfitting more than one room? Choose your quantity below.</p>
+  <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div class="qty-selector">
+      <button class="qty-btn" onclick="changeQty(-1)" type="button">&#8722;</button>
+      <div style="text-align:center">
+        <div class="qty-label">Pillow Bags</div>
+        <div class="qty-display">1</div>
+      </div>
+      <button class="qty-btn" onclick="changeQty(1)" type="button">+</button>
     </div>
-    <button class="qty-btn" onclick="changeQty(1)" type="button">+</button>
-  </div>
-  <div class="price-table">
-    <div class="price-row">
-      <div class="price-row-label">Pillow Bag kit (full price)<span class="sub">Headphones, 3 eye masks, 3 pillow cases included, per bag</span></div>
-      <div class="price-row-value" id="hero-full-total">$2,500</div>
-    </div>
-    <div class="price-row">
-      <div class="price-row-label">Reservation deposit<span class="sub">Due today to secure your place in line</span></div>
-      <div class="price-row-value" id="hero-deposit-total">$250</div>
-    </div>
-    <div class="price-row total">
-      <div class="price-row-label">Balance due before shipment</div>
-      <div class="price-row-value" id="hero-balance-total">$2,250</div>
+    <div style="margin-top:16px"><span class="price-row-value" id="hero-full-total">$2,500</span></div>
+    <div style="margin-top:24px">
+      <div class="price-row-label">Pillow Bag kit (full price)<span class="sub">Headphones, vibroacoustic pillow, 3 pillow cases included per bag</span></div>
     </div>
   </div>
   <div class="custom-order-box">
@@ -404,30 +391,24 @@ footer p{font-size:12px}
 <section class="section-warm">
   <div class="sl">What happens next</div>
   <h2>From reservation<br>to delivery.</h2>
-  <p class="body-text">We're producing the first run of Pillow Bags in limited quantities. Reservations are processed in the order received.</p>
+  <p class="body-text">We're producing Pillow Bags in limited quantities. Reservations are processed in the order received.</p>
   <div class="timeline">
     <div class="tl-item">
       <div class="tl-line"></div>
       <div class="tl-dot"></div>
       <div class="tl-month">Today</div>
-      <div class="tl-label">Reserve with a refundable $250 deposit per bag</div>
+      <div class="tl-label">Reserve for $2,500 per bag</div>
     </div>
     <div class="tl-item">
       <div class="tl-line"></div>
       <div class="tl-dot"></div>
-      <div class="tl-month">July</div>
+      <div class="tl-month">December</div>
       <div class="tl-label">Production run confirmed &amp; finalized</div>
     </div>
     <div class="tl-item">
       <div class="tl-line"></div>
       <div class="tl-dot"></div>
-      <div class="tl-month">August</div>
-      <div class="tl-label">Remaining balance invoiced ahead of shipment</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-line"></div>
-      <div class="tl-dot"></div>
-      <div class="tl-month">September</div>
+      <div class="tl-month">January</div>
       <div class="tl-label">Estimated delivery to your property</div>
     </div>
   </div>
@@ -436,7 +417,7 @@ footer p{font-size:12px}
 <section class="reserve-panel" id="reserve-form">
   <div class="reserve-box">
     <h3>Reserve Your Pillow Bag</h3>
-    <p class="rb-sub">Secure your place in the founding production run</p>
+    <p class="rb-sub">Secure your pillow bags today.</p>
     <div class="qty-selector-light">
       <button class="qty-btn-light" onclick="changeQty(-1)" type="button">&#8722;</button>
       <div style="text-align:center">
@@ -446,11 +427,10 @@ footer p{font-size:12px}
       <button class="qty-btn-light" onclick="changeQty(1)" type="button">+</button>
     </div>
     <div class="rb-summary">
-      <span class="rb-summary-label">Deposit due today</span>
-      <span class="rb-summary-value">$250</span>
+      <span class="rb-summary-label">Due today</span>
+      <span class="rb-summary-value" id="rb-due-today">$2,500</span>
     </div>
     <button type="button" onclick="handleReserve()" class="btn-demo-large rb-submit">Continue to Payment</button>
-    <p class="rb-legal">Your deposit secures your place in the production queue and is fully refundable up to 30 days before shipment. The remaining balance will be invoiced separately in August, ahead of estimated September delivery.</p>
   </div>
 </section>
 
@@ -458,24 +438,22 @@ footer p{font-size:12px}
   <div class="sl">Common questions</div>
   <h2>Before you reserve.</h2>
   <div class="faq-list">
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Is the $250 deposit refundable?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. Your deposit is fully refundable up to 30 days before your estimated shipment date. If production timelines shift or your needs change, just reach out and we'll process the refund.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">When will I be charged the remaining balance?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">The remaining balance ($2,250 per bag) will be invoiced in August, approximately 3&#8211;4 weeks ahead of your estimated September shipment. You'll receive advance notice before any additional charge.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can I reserve more than one Pillow Bag?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. You can reserve up to 10 Pillow Bags in a single reservation using the quantity selector above. For larger multi-property orders, <a href="mailto:benjamin@afeltsense.ai?subject=Multi-Property%20Pillow%20Bag%20Order" style="color:var(--sand);text-decoration:underline">email us</a> and we'll set up a custom reservation.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What if the September timeline shifts?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">September is our current estimate based on the production schedule. If timelines shift, we'll notify all reservation holders directly and your deposit remains fully refundable regardless of any delay.</div></div></div>
-    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do I need to purchase anything else to use A Felt Sense?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Each Pillow Bag kit comes with everything you need to start the ritual &#8212; the signature pillow, audiophile headphones, three eye masks, and three pillow cases. No additional hardware, subscriptions, or accessories required to begin.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Can I reserve more than one Pillow Bag?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Yes. You can reserve up to 100 Pillow Bags in a single reservation using the quantity selector above. For custom orders, <a href="mailto:benjamin@afeltsense.ai?subject=Multi-Property%20Pillow%20Bag%20Order" style="color:var(--sand);text-decoration:underline">email us</a> and we'll set up a custom reservation to get you exactly what you need.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What if I want a different color?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">We can customize the look of A Felt Sense. Current colors include white, black, navy, green and beige. <a href="mailto:benjamin@afeltsense.ai" style="color:var(--sand);text-decoration:underline">E-mail us</a> to explore custom color options for your property.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">What if the January timeline shifts?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">January is our current estimate based on the production schedule. If timelines shift, we'll notify all reservation holders directly and often.</div></div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Do I need to purchase anything else to use A Felt Sense?</span><span class="faq-icon">+</span></div><div class="faq-a"><div class="faq-a-inner">Each Pillow Bag kit comes with everything you need to start the ritual &#8212; the signature pillow, audiophile headphones, vibroacoustic pillow, and three pillow cases. No additional hardware, subscriptions, or accessories required to begin.</div></div></div>
   </div>
 </section>
 
 <section class="final-cta">
-  <h2>Secure your place<br>in the founding run.</h2>
-  <p class="cta-sub">Production quantities are limited. Reserve up to 10 Pillow Bags today with a fully refundable $250 deposit per bag.</p>
-  <button class="btn-demo-large" onclick="scrollToReserve()">Reserve Your Pillow Bag</button>
-  <p class="footer-micro">Estimated shipping September &middot; $250 deposit per bag, balance due before shipment.</p>
+  <h2>Secure your pillow bags today.</h2>
+  <p class="cta-sub">Production quantities are limited. Reserve up to 100 Pillow Bags today.</p>
+  <button class="btn-demo-large" onclick="scrollToReserve()">Reserve Your Pillow Bags</button>
 </section>
 
 <footer>
   <div class="logo">A Felt Sense</div>
-  <p>&copy; 2025 A Felt Sense &nbsp;&middot;&nbsp; Questions about your reservation? Email us or book a call above.</p>
+  <p>&copy; 2026 A Felt Sense</p>
 </footer>
 
 </div>
@@ -494,7 +472,7 @@ function scrollToReserve(){
   document.getElementById('reserve-form').scrollIntoView({behavior:'smooth',block:'center'});
 }
 function changeQty(delta){
-  qty = Math.min(10, Math.max(1, qty + delta));
+  qty = Math.min(100, Math.max(1, qty + delta));
   updateQtyDisplays();
 }
 function updateQtyDisplays(){
@@ -502,7 +480,7 @@ function updateQtyDisplays(){
   var totalDeposit = qty * depositPerUnit;
   var totalBalance = qty * (unitPrice - depositPerUnit);
   var totalFull = qty * unitPrice;
-  document.querySelectorAll('.rb-summary-value').forEach(function(el){el.textContent = '$' + totalDeposit.toLocaleString()});
+  document.querySelectorAll('.rb-summary-value').forEach(function(el){el.textContent = '$' + totalFull.toLocaleString()});
   var depEl = document.getElementById('hero-deposit-total');
   if(depEl) depEl.textContent = '$' + totalDeposit.toLocaleString();
   var balEl = document.getElementById('hero-balance-total');
