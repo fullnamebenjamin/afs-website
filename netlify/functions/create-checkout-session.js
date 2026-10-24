@@ -39,7 +39,7 @@ exports.handler = async function (event) {
           adjustable_quantity: {
             enabled: true,
             minimum: 1,
-            maximum: 10
+            maximum: 100
           }
         }
       ],
