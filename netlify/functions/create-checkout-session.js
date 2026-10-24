@@ -56,7 +56,7 @@ exports.handler = async function (event) {
     console.error('Stripe error:', err);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Something went wrong creating the checkout session.' })
+      body: JSON.stringify({ error: err.message })
     };
   }
 };
