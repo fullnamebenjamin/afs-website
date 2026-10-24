@@ -23,7 +23,7 @@ exports.handler = async function (event) {
     if (!Number.isInteger(qty) || qty < 1 || qty > 100) {
       return {
         statusCode: 400,
-        body: JSON.stringify({ error: 'Invalid quantity. Must be between 1 and 10.' })
+        body: JSON.stringify({ error: 'Invalid quantity. Must be between 1 and 100.' })
       };
     }
 
